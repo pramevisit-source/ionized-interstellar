@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindRise | Master Your Potential</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="MindRise is a premium personal development and productivity platform. Discover science-backed strategies to optimize your focus, build better habits, and elevate your performance.">
+    <meta name="keywords"
+        content="personal development, productivity, growth mindset, morning routine, deep work, habit stacking, self improvement">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="MindRise | Master Your Potential">
+    <meta property="og:description"
+        content="Discover science-backed strategies to optimize your focus, build better habits, and elevate your performance.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mindrise.example.com">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Reading Progress Bar -->
+    <div id="readProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon"><i class="fa-solid fa-leaf"></i></div>
+                <div class="nav-logo-text">Mind<span>Rise</span></div>
+            </a>
+
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="#topics">Topics</a>
+                <a href="#featured">Featured</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="nav-cta">
+                <a href="#newsletter" class="btn btn-outline"
+                    style="padding: 10px 20px; font-size: 0.85rem;">Subscribe</a>
+            </div>
+
+            <button class="nav-hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="#topics">Topics</a>
+            <a href="#featured">Featured</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="#newsletter" style="color: var(--accent-secondary); margin-top: 10px;">Subscribe to Newsletter</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="container relative">
+            <div class="hero-content">
+                <div class="hero-badge fade-in">Trending: The Science of Habit Stacking</div>
+                <h1 class="hero-title fade-in" style="transition-delay: 0.1s;">
+                    Elevate Your Mind. <br>
+                    <span class="gradient-text">Master Your Potential.</span>
+                </h1>
+                <p class="hero-subtitle fade-in" style="transition-delay: 0.2s;">
+                    Discover science-backed strategies to optimize your focus, build unbreakable habits, and accelerate
+                    your personal growth in a distracted world.
+                </p>
+                <div class="hero-actions fade-in" style="transition-delay: 0.3s;">
+                    <a href="#featured" class="btn btn-primary">Start Reading <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#topics" class="btn btn-outline">Explore Topics</a>
+                </div>
+
+                <div class="hero-stats fade-in" style="transition-delay: 0.4s;">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Expert Guides</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">200k</div>
+                        <div class="stat-label">Monthly Readers</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10k+</div>
+                        <div class="stat-label">Newsletter Subs</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual"></div>
+            <div class="hero-img-wrapper fade-in" style="transition-delay: 0.5s;">
+                <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=1200"
+                    alt="Person meditating on a mountain peak to conceptualize peak performance">
+            </div>
+        </div>
+    </section>
+
+    <!-- Essential Habits Strip -->
+    <section class="feature-strip">
+        <div class="container">
+            <div class="feature-strip-inner fade-in">
+                <div class="feature-item">
+                    <div class="feature-icon" style="color: #60a5fa;"><i class="fa-solid fa-brain"></i></div>
+                    <div class="feature-label">Mental Frameworks</div>
+                    <div class="feature-desc">Learn how to think clearly and make better decisions.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon" style="color: #34d399;"><i class="fa-solid fa-stopwatch"></i></div>
+                    <div class="feature-label">Peak Productivity</div>
+                    <div class="feature-desc">Reclaim your time and achieve more with less effort.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon" style="color: #fbbf24;"><i class="fa-solid fa-bolt"></i></div>
+                    <div class="feature-label">Energy Management</div>
+                    <div class="feature-desc">Optimize your physical and mental battery.</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon" style="color: #f472b6;"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <div class="feature-label">Holistic Wellness</div>
+                    <div class="feature-desc">Balance ambition with inner peace and health.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Topic Categories -->
+    <section id="topics" class="topics">
+        <div class="container">
+            <div class="section-tag fade-in">Explore Topics</div>
+            <h2 class="section-title fade-in">Find Your <span>Focus</span></h2>
+            <p class="section-sub fade-in">Dive deep into our curated collections of personal development insights.</p>
+
+            <div class="topics-grid fade-in" style="transition-delay: 0.2s;">
+                <a href="#" class="topic-card">
+                    <div class="topic-img-wrapper"><img
+                            src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&q=80&w=200&h=200"
+                            alt="Goal Setting"></div>
+                    <div class="topic-name">Goal Setting</div>
+                    <div class="topic-count">12 articles</div>
+                </a>
+                <a href="#" class="topic-card">
+                    <div class="topic-img-wrapper"><img
+                            src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&q=80&w=200&h=200"
+                            alt="Mindset"></div>
+                    <div class="topic-name">Mindset</div>
+                    <div class="topic-count">18 articles</div>
+                </a>
+                <a href="#" class="topic-card">
+                    <div class="topic-img-wrapper"><img
+                            src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&q=80&w=200&h=200"
+                            alt="Productivity"></div>
+                    <div class="topic-name">Productivity</div>
+                    <div class="topic-count">24 articles</div>
+                </a>
+                <a href="#" class="topic-card">
+                    <div class="topic-img-wrapper"><img
+                            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=200&h=200"
+                            alt="Mindfulness"></div>
+                    <div class="topic-name">Mindfulness</div>
+                    <div class="topic-count">15 articles</div>
+                </a>
+                <a href="#" class="topic-card">
+                    <div class="topic-img-wrapper"><img
+                            src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=200&h=200"
+                            alt="Learning"></div>
+                    <div class="topic-name">Learning</div>
+                    <div class="topic-count">9 articles</div>
+                </a>
+                <a href="#" class="topic-card">
+                    <div class="topic-img-wrapper"><img
+                            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=200&h=200"
+                            alt="Career"></div>
+                    <div class="topic-name">Career</div>
+                    <div class="topic-count">11 articles</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section id="featured" class="articles" style="background: rgba(20,20,33,0.3);">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="section-tag fade-in">Must Reads</div>
+                    <h2 class="section-title fade-in">Editor's <span>Picks</span></h2>
+                </div>
+                <a href="#" class="btn btn-ghost fade-in">View All Articles <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="articles-grid featured fade-in" style="transition-delay: 0.2s;">
+                <!-- Large Featured Card -->
+                <a href="article-morning-routine.html" class="article-card large">
+                    <div class="article-card-img">
+                        <img src="https://images.unsplash.com/photo-1498144846853-6ccca2da15d3?auto=format&fit=crop&q=80&w=1200"
+                            alt="Morning coffee and journal for a highly productive morning routine">
+                        <div class="article-card-img-overlay"></div>
+                        <div class="article-card-category">Productivity</div>
+                    </div>
+                    <div class="article-card-body">
+                        <div class="article-card-meta">
+                            <span><i class="fa-regular fa-calendar"></i> Oct 24, 2025</span>
+                            <span class="dot">•</span>
+                            <span>By Michael Chen</span>
+                        </div>
+                        <h3 class="article-card-title">The Ultimate Morning Routine for Peak Performance in 2026</h3>
+                        <p class="article-card-excerpt">Discover how top performers structure their first two hours of
+                            the day to maximize energy, focus, and long-term success. It's not about waking up at 4 AM,
+                            it's about what you do when you wake up.</p>
+                        <div class="article-card-footer">
+                            <span class="article-read-more">Read Full Article <i
+                                    class="fa-solid fa-arrow-right"></i></span>
+                            <span class="article-read-time"><i class="fa-regular fa-clock"></i> 8 min read</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Sidebar Smaller Cards -->
+                <div class="articles-side">
+                    <a href="article-deep-work.html" class="article-card-mini">
+                        <div class="article-card-mini-img">
+                            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=400"
+                                alt="Desk setup for deep work and focus">
+                        </div>
+                        <div class="article-card-mini-body">
+                            <div class="article-card-mini-category">Focus</div>
+                            <h4 class="article-card-mini-title">Deep Work: How to Master Focus in a Distracted World
+                            </h4>
+                            <div class="article-card-mini-meta">Oct 20 • 6 min read</div>
+                        </div>
+                    </a>
+
+                    <a href="article-habit-stacking.html" class="article-card-mini">
+                        <div class="article-card-mini-img">
+                            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=400"
+                                alt="Person doing yoga and building habits">
+                        </div>
+                        <div class="article-card-mini-body">
+                            <div class="article-card-mini-category">Habits</div>
+                            <h4 class="article-card-mini-title">Habit Stacking: The Science of Building Better Habits
+                            </h4>
+                            <div class="article-card-mini-meta">Oct 18 • 5 min read</div>
+                        </div>
+                    </a>
+
+                    <a href="article-growth-mindset.html" class="article-card-mini">
+                        <div class="article-card-mini-img">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=400"
+                                alt="Students studying with a growth mindset">
+                        </div>
+                        <div class="article-card-mini-body">
+                            <div class="article-card-mini-category">Mindset</div>
+                            <h4 class="article-card-mini-title">How to Develop a True Growth Mindset</h4>
+                            <div class="article-card-mini-meta">Oct 15 • 7 min read</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Articles Grid -->
+    <section class="articles">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <div class="section-tag fade-in">Latest Content</div>
+                    <h2 class="section-title fade-in">Recent <span>Insights</span></h2>
+                </div>
+            </div>
+
+            <div class="articles-grid fade-in" style="transition-delay: 0.2s;">
+                <a href="article-time-management.html" class="article-card">
+                    <div class="article-card-img">
+                        <img src="https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?auto=format&fit=crop&q=80&w=800"
+                            alt="Watch representing time management mastery">
+                        <div class="article-card-category">Productivity</div>
+                    </div>
+                    <div class="article-card-body">
+                        <div class="article-card-meta">
+                            <span>Oct 12, 2025</span> <span class="dot">•</span> <span>By Sarah Jenkins</span>
+                        </div>
+                        <h3 class="article-card-title">Time Management Mastery: Proven Strategies for 2026</h3>
+                        <p class="article-card-excerpt">Stop feeling overwhelmed by your to-do list. Learn the exact
+                            frameworks that successful executives use to manage their time and energy effectively.</p>
+                        <div class="article-card-footer">
+                            <span class="article-read-more">Read More <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="article-card">
+                    <div class="article-card-img">
+                        <img src="https://images.unsplash.com/photo-1488229297570-58520851e868?auto=format&fit=crop&q=80&w=800"
+                            alt="Open book symbolising lifelong learning">
+                        <div class="article-card-category">Learning</div>
+                    </div>
+                    <div class="article-card-body">
+                        <div class="article-card-meta">
+                            <span>Oct 08, 2025</span> <span class="dot">•</span> <span>By David Ross</span>
+                        </div>
+                        <h3 class="article-card-title">The Feynman Technique: How to Learn Anything Faster</h3>
+                        <p class="article-card-excerpt">A deep dive into Nobel Prize-winning physicist Richard Feynman's
+                            four-step process for understanding and remembering complex concepts.</p>
+                        <div class="article-card-footer">
+                            <span class="article-read-more">Read More <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="article-card">
+                    <div class="article-card-img">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=800"
+                            alt="Person meditating representing mindfulness">
+                        <div class="article-card-category">Mindfulness</div>
+                    </div>
+                    <div class="article-card-body">
+                        <div class="article-card-meta">
+                            <span>Oct 05, 2025</span> <span class="dot">•</span> <span>By Elena Woods</span>
+                        </div>
+                        <h3 class="article-card-title">Digital Minimalism: Reclaiming Your Brain</h3>
+                        <p class="article-card-excerpt">How to break free from algorithm-driven distraction and build an
+                            intentional relationship with your devices to protect your peace.</p>
+                        <div class="article-card-footer">
+                            <span class="article-read-more">Read More <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div style="text-align: center; margin-top: 48px;">
+                <a href="#" class="btn btn-outline fade-in">Load More Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Integration -->
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <div class="newsletter-inner fade-in">
+                <div class="newsletter-content">
+                    <h2 class="newsletter-title">Join the <span class="gradient-text">Top 1%</span></h2>
+                    <p class="newsletter-sub">Get our weekly newsletter packed with actionable strategies for peak
+                        performance, delivered straight to your inbox every Sunday.</p>
+                </div>
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Enter your email address..." required>
+                    <button type="submit" class="newsletter-btn">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-brand-logo">
+                        <div class="nav-logo-icon" style="width: 32px; height: 32px; font-size: 0.9rem;"><i
+                                class="fa-solid fa-leaf"></i></div>
+                        <div>Mind<span>Rise</span></div>
+                    </div>
+                    <p class="footer-desc">Empowering ambitious individuals with science-backed strategies for personal
+                        growth, productivity, and peak performance.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-btn"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Productivity</a></li>
+                        <li><a href="#">Mindset & Growth</a></li>
+                        <li><a href="#">Habits & Routines</a></li>
+                        <li><a href="#">Health & Energy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Write for Us</a></li>
+                        <li><a href="#">Sponsorships</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copy">&copy; 2026 MindRise. All rights reserved.</div>
+                <div class="footer-legal">
+                    <a href="mailto:pramevisit@gmail.com"><i class="fa-regular fa-envelope"></i>
+                        pramevisit@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button id="scrollTop" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
